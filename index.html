@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="shoe-icon">👟</div>
+            <div class="loader-text">Carregando</div>
+            <div class="loader-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
     <header>
         <nav>
             <div class="logo">FeitoPraTi</div>
@@ -16,8 +29,21 @@
                 <li><a href="#future">Futuro</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Início</a>
+        <a href="#about">Sobre</a>
+        <a href="#future">Futuro</a>
+        <a href="#contact">Contato</a>
+    </div>
 
     <section id="home" class="hero">
         <div class="floating-shapes">
@@ -28,7 +54,44 @@
         <div class="hero-content">
             <h1>Crie Seu Próprio Estilo</h1>
             <p>A revolução da personalização de calçados está chegando. Prepare-se para expressar sua identidade única!</p>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <p>Dias</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <p>Horas</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <p>Minutos</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <p>Segundos</p>
+                </div>
+            </div>
+            
             <a href="#about" class="cta-button">Conheça Nossa Visão</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-item">
+            <h3 class="counter" data-target="100">0</h3>
+            <p>Personalizações Disponíveis</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="counter" data-target="50">0</h3>
+            <p>Designs Criativos</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="counter" data-target="10000">0</h3>
+            <p>Clientes Esperando</p>
         </div>
     </section>
 
@@ -56,6 +119,101 @@
                 <div class="feature-icon">💜</div>
                 <h3>Felicidade em Primeiro Lugar</h3>
                 <p>Nossa marca é pra ti! Queremos que você se sinta feliz e confiante com seus calçados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2 class="section-title">Como Funciona</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-icon">📱</div>
+                <h3>Escolha o Modelo</h3>
+                <p>Selecione o tipo de tênis que você ama e quer personalizar</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-icon">🎨</div>
+                <h3>Crie Seu Design</h3>
+                <p>Use nossa ferramenta 3D para criar o design dos seus sonhos</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-icon">🛒</div>
+                <h3>Encomende</h3>
+                <p>Faça seu pedido e receba em casa com entrega rápida</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Carousel -->
+    <section class="gallery-section">
+        <h2 class="section-title">Galeria de Inspirações</h2>
+        <div class="gallery-carousel">
+            <button class="carousel-btn prev" id="prevBtn">❮</button>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="gallery-item">
+                        <div class="mockup-card">
+                            <div class="mockup-placeholder" style="background: linear-gradient(135deg, #ff6b6b, #feca57);">👟</div>
+                            <h4>Estilo Vibrante</h4>
+                            <p>Cores que expressam energia e alegria</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="mockup-card">
+                            <div class="mockup-placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2);">👟</div>
+                            <h4>Estilo Moderno</h4>
+                            <p>Design minimalista e elegante</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="mockup-card">
+                            <div class="mockup-placeholder" style="background: linear-gradient(135deg, #2ecc71, #27ae60);">👟</div>
+                            <h4>Estilo Natureza</h4>
+                            <p>Inspirações naturais e frescas</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="mockup-card">
+                            <div class="mockup-placeholder" style="background: linear-gradient(135deg, #f368e0, #ff9ff3);">👟</div>
+                            <h4>Estilo Pop</h4>
+                            <p>Cores vibrantes e divertidas</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="mockup-card">
+                            <div class="mockup-placeholder" style="background: linear-gradient(135deg, #00d2d3, #01a3a4);">👟</div>
+                            <h4>Estilo Ocean</h4>
+                            <p>Tons de azul inspirados no mar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next" id="nextBtn">❯</button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="section-title">O que Dizem Sobre Nós</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">M</div>
+                <p>"Mal posso esperar para criar meu próprio design! Isso vai mudar tudo!"</p>
+                <h4>Maria Silva</h4>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">J</div>
+                <p>"Finalmente uma marca que entende o que os jovens querem!"</p>
+                <h4>João Santos</h4>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">A</div>
+                <p>"Vou poder expressar minha personalidade nos meus calçados!"</p>
+                <h4>Ana Oliveira</h4>
             </div>
         </div>
     </section>
@@ -101,12 +259,55 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quando a loja vai lançar?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Estamos trabalhando duro para lançar em breve! Cadastre-se para ser o primeiro a saber.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quais modelos de calçados terei disponíveis?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Teremos tênis, sandálias, chinelos e muito mais! Todos personalizáveis.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como funciona a personalização?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Você poderá escolher cores, adicionar imagens, textos e patterns em nossa ferramenta 3D interativa.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Entregam em todo o Brasil?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Sim! Entregamos em todo o Brasil com rastreamento em tempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="newsletter">
         <h2>Seja o Primeiro a Saber!</h2>
         <p>Cadastre seu e-mail e receba atualizações exclusivas sobre o lançamento</p>
         <form class="newsletter-form" id="newsletterForm">
             <input type="email" placeholder="seu@email.com" required id="emailInput">
-            <button type="submit">Quero Participar!</button>
+            <button type="submit" class="btn-animate">Quero Participar!</button>
         </form>
         <div class="success-message" id="successMessage">
             ✅ Obrigado! Você receberá novidades em breve!
@@ -115,11 +316,44 @@
 
     <section id="contact">
         <h2 class="section-title">Fale Conosco</h2>
-        <p style="text-align: center; font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">
-            Tem alguma dúvida ou sugestão? Adoraríamos ouvir você!<br><br>
-            📧 contato@feitoprati.com.br<br>
-            📱 (11) 99999-9999
-        </p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h4>E-mail</h4>
+                        <p>contato@feitoprati.com.br</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>(11) 99999-9999</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Localização</h4>
+                        <p>São Paulo, SP - Brasil</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <select>
+                    <option value="">Selecione o assunto</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="parceria">Parceria</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <textarea rows="5" placeholder="Sua mensagem"></textarea>
+                <button type="submit" class="btn-animate">Enviar Mensagem</button>
+            </form>
+        </div>
     </section>
 
     <footer>
@@ -129,9 +363,18 @@
             <a href="#" title="Twitter">🐦</a>
             <a href="#" title="YouTube">▶️</a>
         </div>
+        <div class="footer-links">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#contact">Contato</a>
+            <a href="#">Privacidade</a>
+        </div>
         <p style="opacity: 0.7;">© 2025 FeitoPraTi - Todos os direitos reservados</p>
         <p style="opacity: 0.5; margin-top: 1rem;">Site em desenvolvimento - Em breve nossa loja estará no ar!</p>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
 
     <script src="script.js"></script>
 </body>
